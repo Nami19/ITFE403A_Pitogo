@@ -1,0 +1,15 @@
+footer {
+  background: #1d2945;
+  color: #d4af37;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 1px;
+}
+
+footer p {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+}

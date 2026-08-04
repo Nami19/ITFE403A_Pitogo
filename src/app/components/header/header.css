@@ -1,0 +1,16 @@
+header {
+  background-color: #16223A;
+  color: #F5F3EC;
+  padding: 10px 40px;
+  text-align: center;
+  border-bottom: 4px solid #C9A227;
+}
+
+h2 {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
