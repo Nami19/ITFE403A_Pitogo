@@ -13,5 +13,6 @@ export class ProfileCard {
   yearLevel: string = '4th Year';
   section: string = 'N/A';
   nickname: string = 'namae';
-  grade: number = 1.25;
+  email: string = 'bmpitogo@gmail.com';
+  grade: number = 3.25;
 }

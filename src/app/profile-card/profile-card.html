@@ -3,13 +3,13 @@
 
   <h2>{{ studentName }}</h2>
   <h3>{{ studentNumber }}</h3>
-  <p>{{ course }}</p>
-  <p>{{ yearLevel }}</p>
-  <p>{{ section }}</p>
-  <p>{{ nickname.toUpperCase() }}</p>
-  <p>{{ studentName.toLowerCase().replaceAll(' ', '.') + '@dbtc-cebu.edu.ph' }}</p>
+  <p>Course: {{ course }}</p>
+  <p>Year Level: {{ yearLevel }}</p>
+  <p>Section: {{ section }}</p>
+  <p>Nickname: {{ nickname.toUpperCase() }}</p>
+  <p>Email: {{ studentName.toLowerCase().replaceAll(' ', '.') + '@dbtc-cebu.edu.ph' }}</p>
 
-  <p>{{ grade }}</p>
+  <p>Grade: {{ grade }}</p>
   <b>{{ grade>=1.0 && grade<=3 ? 'Passed' : 'Failed' }}</b>
 
 </div>
