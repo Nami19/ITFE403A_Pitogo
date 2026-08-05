@@ -33,6 +33,33 @@
   color: #16223A;
 }
 
+.profile-card h3 {
+  margin: 0 0 4px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #16223A;
+}
+
+.profile-card p {
+  margin: 0 0 4px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.25;
+  color: #000000;
+}
+
+.profile-card b {
+  margin: 0 0 4px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.25;
+  color: #f11b1b;
+}
+
 .profile-info {
   margin-top: 24px;
   display: flex;

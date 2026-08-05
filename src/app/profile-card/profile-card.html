@@ -1,17 +1,15 @@
 <div class="profile-card">
   <img src="profile.jpg" alt="Profile Picture">
 
-  <h2>Bonna Mae Labiaga Pitogo</h2>
+  <h2>{{ studentName }}</h2>
+  <h3>{{ studentNumber }}</h3>
+  <p>{{ course }}</p>
+  <p>{{ yearLevel }}</p>
+  <p>{{ section }}</p>
+  <p>{{ nickname.toUpperCase() }}</p>
+  <p>{{ studentName.toLowerCase().replaceAll(' ', '.') + '@dbtc-cebu.edu.ph' }}</p>
 
-  <div class="profile-info">
-    <div class="info-item">
-      <span class="label">🎓 Course</span>
-      <span class="value">Bachelor of Science in Information Technology</span>
-    </div>
+  <p>{{ grade }}</p>
+  <b>{{ grade>=1.0 && grade<=3 ? 'Passed' : 'Failed' }}</b>
 
-    <div class="info-item">
-      <span class="label">📚 Year Level</span>
-      <span class="value">4th Year</span>
-    </div>
-  </div>
 </div>
