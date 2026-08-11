@@ -1,49 +1,8 @@
-<div class="announcement-card">
-  <h3>{{ announcementTitle1 }}</h3>
-  <p>{{ description1 }}</p>
-</div>
+<h1> ANNOUNCEMENTS: </h1>
 
-<div class="announcement-card">
-  <h3>{{ announcementTitle2 }}</h3>
-  <p>{{ description2 }}</p>
-</div>
-
-<div class="announcement-card">
-  <h3>{{ announcementTitle3 }}</h3>
-  <p>{{ description3 }}</p>
-</div>
-
-<div class="announcement-card">
-  <h3>{{ announcementTitle4 }}</h3>
-  <p>{{ description4 }}</p>
-</div>
-
-<div class="announcement-card">
-  <h3>{{ announcementTitle5 }}</h3>
-  <p>{{ description5 }}</p>
-</div>
-
-<div class="announcement-card">
-  <h3>{{ announcementTitle6 }}</h3>
-  <p>{{ description6 }}</p>
-</div>
-
-<div class="announcement-card">
-  <h3>{{ announcementTitle7 }}</h3>
-  <p>{{ description7 }}</p>
-</div>
-
-<div class="announcement-card">
-  <h3>{{ announcementTitle8 }}</h3>
-  <p>{{ description8 }}</p>
-</div>
-
-<div class="announcement-card">
-  <h3>{{ announcementTitle9 }}</h3>
-  <p>{{ description9 }}</p>
-</div>
-
-<div class="announcement-card">
-  <h3>{{ announcementTitle10 }}</h3>
-  <p>{{ description10 }}</p>
+<div *ngFor="let announcement of announcements" class="announcement-card">
+  <h3>{{ announcement.title }}</h3>
+  <p>{{ announcement.description }}</p>
+  <p><strong>Author:</strong> {{ announcement.author }}</p>
+  <p><strong>Date:</strong> {{ announcement.date }}</p>
 </div>

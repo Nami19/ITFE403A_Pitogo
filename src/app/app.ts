@@ -4,6 +4,7 @@ import { Header } from './components/header/header';
 import { Footer } from './footer/footer';
 import { ProfileCard } from './profile-card/profile-card';
 import { AnnouncementCard } from './announcement-card/announcement-card';
+import { StudentCard } from './student-card/student-card';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,7 @@ import { AnnouncementCard } from './announcement-card/announcement-card';
   imports: [
   Header,
   ProfileCard,
+  StudentCard,
   AnnouncementCard,
   Footer
 ],  

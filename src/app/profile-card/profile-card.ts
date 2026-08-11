@@ -10,9 +10,8 @@ export class ProfileCard {
   studentName: string = 'Bonna Mae Pitogo';
   studentNumber: string = '23017834';
   course: string = 'Bachelor of Science in Information Technology';
-  yearLevel: string = '4th Year';
-  section: string = 'N/A';
-  nickname: string = 'namae';
-  email: string = 'bmpitogo@gmail.com';
+  year: string = '4th Year';
   grade: number = 3.25;
+  academicStanding: string = 'Good Standing';
+  email: string = 'bmpitogo@gmail.com';
 }
