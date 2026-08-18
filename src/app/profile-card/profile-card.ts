@@ -11,7 +11,7 @@ export class ProfileCard {
   studentNumber: string = '23017834';
   course: string = 'Bachelor of Science in Information Technology';
   year: string = '4th Year';
-  grade: number = 3.25;
+  grade: number = 1.25;
   academicStanding: string = 'Good Standing';
   email: string = 'bmpitogo@gmail.com';
 }

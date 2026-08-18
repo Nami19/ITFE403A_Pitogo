@@ -20,12 +20,12 @@
 .student-card {
   width: 520px;
   max-width: 90%;
-  margin: 14px auto;
-  padding: 18px 22px;
-  background: #fff;
-  border: 2px solid #2563eb;
-  border-radius: 18px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+  margin: 15px 0;
+  padding: 15px;
+  background: #fff; 
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   transition: 0.2s ease;
 }
@@ -48,4 +48,49 @@
   color: #777;
   font-size: 15px;
   font-weight: 500;
+}
+
+.button-group {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Times New Roman", serif;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.favorite-btn {
+  background-color: #facc15;
+  color: #172642;
+}
+
+.favorite-btn:hover {
+  background-color: #eab308;
+}
+
+.edit-btn {
+  background-color: #60a5fa;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #3b82f6;
+}
+
+.delete-btn {
+  background-color: #f87171;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #ef4444;
 }

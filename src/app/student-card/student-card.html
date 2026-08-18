@@ -1,6 +1,18 @@
 <h1>👨‍🎓 STUDENT</h1>
 
-<div *ngFor="let student of students; let i = index" class="student-card">
-  <h3>#{{ i + 1 }} {{ student.name }}</h3>
-  <p>{{ student.course }} • {{ student.year }}</p>
+<div *ngFor="let student of students; let i = index" class="student-card" [class.highlighted]="student.isFavorite">  
+  <h3>{{ i + 1 }}. {{ student.name }}</h3>
+  <p>{{ student.course }} - {{ student.year }}</p>
+
+  <div class="button-group">
+    <button 
+      class="favorite-btn" 
+      [class.active]="student.isFavorite"
+      (click)="favoriteClicked(student)">
+      {{ student.isFavorite ? '★ Favorite' : '☆ Favorite' }}
+    </button>
+
+    <button class="edit-btn" (click)="editClicked(student.name)">Edit</button>
+    <button class="delete-btn" (click)="deleteStudent(student.name)">Delete</button>
+  </div>
 </div>
