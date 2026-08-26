@@ -1,0 +1,33 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.detail-card {
+  width: 420px;
+  max-width: 92%;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 28px;
+  box-shadow: 0 14px 30px rgba(15, 26, 51, 0.12);
+  border: 1px solid rgba(15, 26, 51, 0.06);
+  border-top: 4px solid #C9A227;
+  box-sizing: border-box;
+}
+
+.detail-card p {
+  margin: 0 0 14px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #3B4459;
+}
+
+.detail-card p:last-child {
+  margin-bottom: 0;
+}
+
+.detail-card strong {
+  color: #16223A;
+  font-weight: 700;
+}

@@ -1,3 +1,7 @@
+<app-profile-card></app-profile-card>
+
+<app-announcement-card></app-announcement-card>
+
 <div class="student-section-title">
   <h1>STUDENTS</h1>
 </div>
@@ -11,34 +15,18 @@
 
   <div *ngFor="let student of students; let i = index" class="student-card" [class.highlighted]="student.isFavorite">
     <h3>{{ i + 1 }}. {{ student.name }}</h3>
-    <span *ngIf="student.active; else inactiveBadge" class="active-badge">
-      Active
-    </span>
+    <span *ngIf="student.active; else inactiveBadge" class="active-badge">Active</span>
     <ng-template #inactiveBadge>
-      <span class="inactive-badge">
-        Inactive
-      </span>
+      <span class="inactive-badge">Inactive</span>
     </ng-template>
     <p>{{ student.course }} - {{ student.year }}</p>
 
     <div class="button-group">
-      <button
-        class="favorite-btn"
-        [class.active]="student.isFavorite"
-        (click)="favoriteClicked(student)">
+      <button class="favorite-btn" [class.active]="student.isFavorite" (click)="favoriteClicked(student)">
         {{ student.isFavorite ? '★ Favorite' : '☆ Favorite' }}
       </button>
-
-      <button 
-        *ngIf="student.active"
-        class="edit-btn" 
-        (click)="editClicked(student.name)">
-        Edit
-      </button>
-
-      <button class="delete-btn" (click)="deleteStudent(student.name)">
-        Delete
-      </button>
+      <button *ngIf="student.active" class="edit-btn" (click)="editClicked(student.name)">Edit</button>
+      <button class="delete-btn" (click)="deleteStudent(student.name)">Delete</button>
     </div>
   </div>
 

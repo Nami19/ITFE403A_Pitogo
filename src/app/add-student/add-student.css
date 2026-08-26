@@ -1,0 +1,25 @@
+:host {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-student-page {
+  text-align: center;
+}
+
+.add-student-page h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #16223A;
+  letter-spacing: 1px;
+  margin: 0;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #C9A227;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
