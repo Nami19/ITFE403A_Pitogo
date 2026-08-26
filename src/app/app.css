@@ -7,46 +7,52 @@
   background-color: #F4F1E9;
 }
 
-/* Header & Footer */
 app-header,
 app-footer {
   display: block;
   width: 100%;
 }
 
-/* Push footer away from announcements */
 app-footer {
-  margin-top: 70px;
+  margin-top: auto;
 }
 
-/* Dashboard Layout */
 .dashboard {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px 60px;
+  gap: 50px;
+  padding: 45px 20px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-/* Space after profile card */
-app-profile-card {
-  margin-bottom: 40px;
-}
-
-/* Announcement label */
-.announcement-title {
-  font-family: "Times New Roman", serif;
-  font-size: 32px;
-  color: #1c2b4a;
-  margin-bottom: 30px;
-  border-bottom: 3px solid #d4af37;
-  padding-bottom: 8px;
-}
-
-/* Space between announcement cards */
+app-profile-card,
 app-announcement-card {
   display: block;
   width: 100%;
+}
+
+app-student-card {
+  width: 100%;
+}
+
+app-announcement-card {
   max-width: 650px;
-  margin-bottom: 25px;
+  margin: 0 auto;
+}
+
+.announcement-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #16223A;
+  text-align: center;
+  margin: 0 auto 25px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #C9A227;
+  display: inline-block;
 }
