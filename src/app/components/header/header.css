@@ -15,3 +15,37 @@ h2 {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
+.main-nav {
+  background-color: #ffffff;
+  padding: 12px 40px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  border-bottom: 1px solid #ece7d9;
+  box-shadow: 0 2px 6px rgba(22, 34, 58, 0.06);
+}
+
+.main-nav a {
+  color: #16223A;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid #ece7d9;
+  transition: 0.2s ease;
+}
+
+.main-nav a:hover {
+  background-color: #fdf1c8;
+  border-color: #C9A227;
+}
+
+.main-nav a.active-link {
+  background-color: #C9A227;
+  color: #16223A;
+  border-color: #C9A227;
+}

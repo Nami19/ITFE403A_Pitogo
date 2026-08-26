@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { NgFor, NgIf } from '@angular/common';
+import { RouterLink } from '@angular/router';
 import { ProfileCard } from '../profile-card/profile-card';
 import { AnnouncementCard } from '../announcement-card/announcement-card';
 
 @Component({
   selector: 'app-student-card',
   standalone: true,
-  imports: [NgFor, NgIf, ProfileCard, AnnouncementCard],
+  imports: [NgFor, NgIf, ProfileCard, RouterLink,],
   templateUrl: './student-card.html',
   styleUrl: './student-card.css'
 })
@@ -22,9 +23,9 @@ export class StudentCard implements OnInit {
   ];
 
   ngOnInit() {
-    setTimeout(() => {
-      this.loading = false;
-    }, 400);
+  setTimeout(() => {
+    this.loading = false;
+  }, 3);
   }
 
   favoriteClicked(student: any) {

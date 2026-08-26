@@ -6,6 +6,6 @@ import { AddStudent } from './add-student/add-student';
 export const routes: Routes = [
   { path: '', redirectTo: 'students', pathMatch: 'full' },
   { path: 'students', component: StudentCard },
-  { path: 'students/:id', component: StudentDetail },
-  { path: 'students/add', component: AddStudent }
+  { path: 'students/add', component: AddStudent },
+  { path: 'students/:id', component: StudentDetail }
 ];
